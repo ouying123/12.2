@@ -99,7 +99,7 @@ public class NavigationFragment extends Fragment {
     }
 
     private HomeFragment homeFragment;
-    private FenLeiFragment fenLeiFragment;
+   private FenleiFragment fenLeiFragment;
     private CartFragment cartFragment;
     private MeFragment meFragment;
 
@@ -134,7 +134,7 @@ public class NavigationFragment extends Fragment {
                 FenleiFragment fenleiFragment = new FenleiFragment();
               transaction.add(R.id.fl_tag,fenleiFragment);
             } else {
-              transaction.show(fenLeiFragment)
+              transaction.show(fenLeiFragment);
             }
         } else if (icon.getId() == R.id.iv_cart) {
             if (cartFragment == null) {
